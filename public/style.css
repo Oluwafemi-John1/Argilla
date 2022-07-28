@@ -4,14 +4,28 @@ body {
     /* border: 2px solid red; */
     margin: 0;
     padding: 0;
+    /* overflow-y: hidden; */
 }
 #imgbg {
     background: url(../img/splsh\ bg.jpg);
     background-size: cover;
 }
 #mybtn:hover {
-    color: chartreuse !important;
+    color: brown !important;
+}
+#mybtn2:hover {
+    color: white !important;
 }
 input.form-control:hover {
     border: 1px solid chocolate;
 }
+button span.arrow {
+    display: none;
+}
+button span.arrow:hover {
+    /* transform: translateX(20px); */
+    display: block;
+}
+/* .card-header {
+    border: 0 !important;
+} */
