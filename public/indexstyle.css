@@ -13,6 +13,9 @@ body {
 #mybtn:hover {
     color: brown !important;
 }
+.mybtn:hover {
+    color: brown !important;
+}
 #mybtn2:hover {
     color: white !important;
 }
@@ -25,6 +28,9 @@ button span.arrow {
 button span.arrow:hover {
     /* transform: translateX(20px); */
     display: block;
+}
+.signin:hover {
+    color: brown !important;
 }
 /* .card-header {
     border: 0 !important;
