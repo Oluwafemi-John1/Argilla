@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="title">Argilla Sign Up</title>
-    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="inUp.css">
     <!-- <link rel="stylesheet" href="bootstrap.css"> -->
     <link rel="stylesheet" href="../index.css">
     <!-- CSS only -->
@@ -58,22 +58,23 @@
         <div id="divGuy" class="col-6 px-4 py-4 mx-auto bg-white rounded-15 mb-5">
             <div align="center" class="text-dark"><h1 class="mt-3 text-chocolate text-decoration-underline" align="center">Create Account</h1></div>
             <div class="text-secondary form-floating mb-3 mt-3">
-                <input type="text" class="form-control shadow" placeholder="&#x1F464;&nbsp;First Name" id="firstName">
+                <input type="text" class="form-control shadow" placeholder="&#x1F464;&nbsp;First Name" id="fullName">
                 <label for="firstName"><strong>&#x1F464;Full&nbsp;Name:&nbsp;</strong></label>
             </div>
             <div class="text-secondary form-floating mb-3">
-                <input type="email" class="form-control shadow" placeholder="&#x1F4E7;&nbsp;E-Mail" id="mail">
+                <input type="email" class="form-control shadow" placeholder="&#x1F4E7;&nbsp;E-Mail" id="email">
                 <label for="mail"><strong>&#x1F4E7;Email&nbsp;Address:&nbsp;</strong></label>
             </div>
             <div class="text-secondary form-floating mb-3">
-                <input type="password" class="form-control shadow" placeholder="&#x1F512;&nbsp;Enter Password" id="pass">
+                <input type="password" class="form-control shadow" placeholder="&#x1F512;&nbsp;Enter Password" id="password">
                 <label for="password"><strong>&#x1F512;Password:&nbsp;</strong></label>
             </div>
             <div class="text-secondary form-floating mb-1">
-                <input type="number" class="form-control shadow" placeholder="&#x1F4DE;&nbsp;Enter Mobile Number" id="mob">
+                <input type="number" class="form-control shadow" placeholder="&#x1F4DE;&nbsp;Enter Mobile Number" id="mobile">
                 <label for="mobile"><strong>&#x1F4DE;Mobile No:&nbsp;</strong></label>
             </div><br>
-    
+            
+            <div id="reset"></div>
            <div class="d-flex justify-content-center">
                 <button onclick="signUp()" type="button" class="btn-chocolate fw-bold text-hover-blue mt-3 shadow text-white w-70 text-center" id="mybtn">Sign&nbsp;Up <span class="arrow fw-bold">&rarr;</span></button>
            </div>
@@ -84,36 +85,12 @@
                <hr class="w-20 ms-4 border-chocolate">
             </div>
             <div class="d-flex justify-content-center">
-                 <button onclick="signUp()" type="button" class="btn-white fw-bold btn-outline-chocolate mt-3 shadow text-chocolate w-70 text-center" id="mybtn2"><img src="../img/svgexport-2.png" alt="" class="mb-1">&nbsp;Continue&nbsp;with&nbsp;Google</button>
+                 <button onclick="signUpG()" type="button" class="btn-white fw-bold btn-outline-chocolate mt-3 shadow text-chocolate w-70 text-center" id="mybtn2"><img src="../img/svgexport-2.png" alt="" class="mb-1">&nbsp;Continue&nbsp;with&nbsp;Google</button>
              </div>
         </div>
     </div>
 
 
-
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBSQY_zM-acKHS-M5ey6cdXuoTleRNITis",
-          authDomain: "e-commerce-3607f.firebaseapp.com",
-          projectId: "e-commerce-3607f",
-          storageBucket: "e-commerce-3607f.appspot.com",
-          messagingSenderId: "418833083928",
-          appId: "1:418833083928:web:c158914261e0776c8e5d6d",
-          measurementId: "G-SVP5W9KTXX"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-      <script src="signUp.js"></script>
+    <script src="signUp.js" type="module"></script>
 </body>
 </html>

@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display:ital@0;1&family=Mukta:wght@200&family=Ubuntu&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap'); */
 body {
     /* background: #86F0D3 !important; */
     /* border: 2px solid red; */
     margin: 0;
     padding: 0;
     /* overflow-y: hidden; */
+}
+.text-chocolate-dark-5 {
+    font-family: 'Square Peg', cursive;
 }
 #imgbg {
     background: url(../img/splsh\ bg.jpg);
