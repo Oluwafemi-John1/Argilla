@@ -49,7 +49,7 @@
                 <div class="card-footer w-100 border-none" style="height: 20vh !important;">
                     <div class="fw-bold border-none text-white py-2 mx-auto bg-glass w-90 rounded-2">
                         <div class="fs-4 mb-2">Already have an account?</div>
-                        <button type="button" class="btn-white fw-bold text-white btn-chocolate shadow text-chocolate p-1 mb-2 w-70 mybtn text-center">Sign In</button>
+                        <button type="button" class="btn-white fw-bold text-white btn-chocolate shadow text-chocolate p-1 mb-2 w-70 mybtn text-center" onclick="signIn()">Sign In</button>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,6 @@
 
 
 
-
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
@@ -115,5 +114,6 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
+      <script src="signUp.js"></script>
 </body>
 </html>

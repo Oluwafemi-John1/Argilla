@@ -49,7 +49,7 @@
                 <div class="card-footer w-100 border-none" style="height: 20vh !important;">
                     <div class="fw-bold border-none text-white py-2 mx-auto bg-glass w-90 rounded-2">
                         <div class="fs-4 mb-2">No account?</div>
-                        <button type="button" class="btn-white fw-bold text-white btn-chocolate shadow text-chocolate p-1 mb-2 w-70 mybtn text-center">Sign Up</button>
+                        <button type="button" class="btn-white fw-bold text-white btn-chocolate shadow text-chocolate p-1 mb-2 w-70 mybtn text-center" onclick="signUp()">Sign Up</button>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
             </div>
     
            <div class="d-flex justify-content-center">
-                <button onclick="signUp()" type="button" class="btn-chocolate fw-bold text-hover-blue mt-3 shadow text-white w-70 text-center" id="mybtn">Sign&nbsp;In <span class="arrow fw-bold">&rarr;</span></button>
+                <button type="button" class="btn-chocolate fw-bold text-hover-blue mt-3 shadow text-white w-70 text-center" id="mybtn">Sign&nbsp;In <span class="arrow fw-bold">&rarr;</span></button>
            </div>
            
            <div class="d-flex justify-content-center mt-1">
@@ -76,7 +76,7 @@
                <hr class="w-20 ms-4 border-chocolate">
             </div>
             <div class="d-flex justify-content-center">
-                 <button onclick="signUp()" type="button" class="btn-white fw-bold btn-outline-chocolate mt-3 shadow text-chocolate w-70 text-center" id="mybtn2"><img src="../img/svgexport-2.png" alt="" class="mb-1">&nbsp;Continue&nbsp;with&nbsp;Google</button>
+                 <button type="button" class="btn-white fw-bold btn-outline-chocolate mt-3 shadow text-chocolate w-70 text-center" id="mybtn2"><img src="../img/svgexport-2.png" alt="" class="mb-1">&nbsp;Continue&nbsp;with&nbsp;Google</button>
              </div>
         </div>
     </div>
@@ -107,5 +107,6 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
+      <script src="signIn.js"></script>
 </body>
 </html>
